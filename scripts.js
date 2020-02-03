@@ -7,4 +7,7 @@ const year = 2018;
 // with ().
 // Arugement provide additional information that a METHOD TO DO ITS JOB.
 // console.log("Hello World!");
-console.log("My name is " + studentName + "been coding since" + year);
+//console.log("My name is " + studentName + "been coding since" + year);
+
+// Template Literals string interpolation
+console.log(`My name is ${studentName}`);
