@@ -1,91 +1,62 @@
-// Create a variable "timeOfDay" and assign it a string
-const timeOfDay = "Good evening!";
+console.log(something);
+// undefined is a Primitive
+// I let x: any the absence of any value
+let x;
 
-// Create a variable "greeting" that references a template literal
-// use "timeOfDay" in the template literal to create a message like "Good morning!"
-// or "Good evening!"
-const greeting = timeOfDay;
+ console.log(x);
+ console.log(undefined);
 
-// print "greeting";
-console.log(greeting);
+// Null is a primitive
+// Nul represents deliberate assignment of 'nothing'.
+ x = null;
+ console.log(x);
 
-// create a new variable, but do not assign it a value
-let daysOfTheWeek;
+// This is an Object. {}
+// me is an object
+ const me = {
+   name: "Runali"
+};
 
-//  Print the variable and its type.
-console.log(typeof daysOfTheWeek);
-// What type should we expect?
-// Ans: undefined
+console.log(me.name);
+console.log(typeof me.name); // string
+console.log(typeof me.age); // there's no variable / undefined
 
-// assign the variable a value that indicates the variable is purposely blank
-daysOfTheWeek = null;
+// Create a new key value pair with age = 23;
+ me.age = 23;
+console.log(me.age);
 
-// print the variable and its type again
-console.log(typeof daysOfTheWeek);
-// What type should we expect?
-// Ans: Object
+// me is an object
+  const me = {
+   name: "Runali",
+   age: 23,
+   pets: {
+     cat: "Dara",
+     dog: "James"
+   }
+ };
 
-// try to print a variable that does not exist.
-console.log(weekDays);
-// What should we expect to print in the CLI
-// Ans: weekDays is not defined.
+console.log(me.pets.cat);
+console.log(me.pets.cat); // undefined.cat
 
-// print "greeting" again
-console.log(greeting);
-// will this line run?
-// Ans: No, because of the error line code above. Must be fix first
-//      before the next line of code will execute.
+// implicit conversion
+ console.log("2" + 2); // string 22
+ console.log(2 + 2); // 4
 
-// create a variable called "name" that references a string
-const name = "Runali";
+// explicit conversion
+ console.log(Number("22"));
 
-// create a variable called "favoriteSong" that references a string
-let favoriteSong = "Eternity";
+ console.log(true + true + "true" + "false"); // 2truefalse
+const name = "Fake";
+const me = {
+  name: "Manav"
+}
+me.name = "Dhanav";
 
-// create a variable called "wage" that references a number
-let wage = 10000;
+const me = {
+  something: "ehll" ;
+}
 
-// create a variable called "age" that references a number
-let age = 30;
+console.log(name) // reference the global variable
+console.log(me.name); // reference the key 'name' inside of the OBJECT me
+console.log(console) // object is console
 
-// create a variable called "onlyChild" that references a boolean
-let onlyChild = false;
-
-// create a variable called "satisfied" that references a boolean
-let satisfied = false;
-
-// create a variable called "favoriteThing" that references ANY primitive value
-let favoriteThing = "Computer";
-// print the data type of "favoriteThing"
-console.log(typeof favoriteThing); // string type
-
-// You heard a new song that became your favorite.
-// Reassign the variable "favoriteSong"
-favoriteSong = "Love of a lifetime";
-
-// You no longer like the type of data stored in "favoriteThing"
-// Reassign "favoriteThing" to a different primitive data type
-// and print its type
-favoriteThing = "Cellphone";
-console.log(typeof favoriteThing); // string
-
-// Happy Birthday!
-// Reassign "age" to a new value
-age = 55;
-
-// You got a big raise at work
-// Reassign "wage" to a new value
-wage = 20000;
-
-// Your raise changed your job satisfaction
-// Assign "satisfied" to true
-satisfied = true;
-
-// use "console.log()" and "+" to print a sentence that includes two variables
-console.log(
-  "My favorite song is " +
-    favoriteSong +
-    " and favorite thing is " +
-    favoriteThing +
-    "."
-);
