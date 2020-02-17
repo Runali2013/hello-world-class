@@ -35,33 +35,43 @@
 // ({a: 42} === {a:42});  // this is false
 // Pass by value
 
-let x = 3;
-let y = x;
+// let x = 3;
+// let y = x;
 
-console.log(y);
+// console.log(y);
 
 // primitives cannot mutate
 // '3' that was used with 'x' previously thrown out and replaced
 
-x = 4;
-let y = x;
-console.log(y); // 4
+// x = 4;
+// let y = x;
+// console.log(y); // 4
 
+// const x = {
+//   name: "Manav";
+// }
 
-const x = {
-  name: "Manav";
+// // pass by reference
+// const a = {
+//   name: "Manav"
+// };
+
+// const b = a;
+
+// // b will point to the same memory address as a.
+// // what happends to I will affect the others
+// a.name ="Dhanav";
+// console.log(b.name);
+
+// console.log(b.name);
+
+// LOOP
+// TODO: Log the numbers from 1 to 10
+let x = 1;
+
+while (x <= 10) {
+  console.log(x);
+
+  // Always make sure tat there is an exit condition
+  x += 1; // x = x + 1;
 }
-
-// pass by reference
-const a = {
-  name: "Manav"
-};
-
-const b = a;
-
-// b will point to the same memory address as a.
-// what happends to I will affect the others
-a.name ="Dhanav";
-console.log(b.name);
-
-console.log(b.name);
